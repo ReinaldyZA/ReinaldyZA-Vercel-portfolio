@@ -2,7 +2,7 @@
 
 **Live site:** [reinaldyza-portfolio.vercel.app](https://reinaldyza-portfolio.vercel.app)
 
-A portfolio of data analysis projects from the RevoU Full Stack Data Analytics program and my undergraduate thesis at BINUS University. Each project opens with the finding, then walks through the business question, the method, the recommendations and the original deliverables.
+A portfolio of data analysis projects from the RevoU Full Stack Data Analytics program, an independent case study and my undergraduate thesis at BINUS University. Each project opens with the finding, then walks through the business question, the method, the recommendations and the original deliverables.
 
 ## Thesis
 
@@ -17,6 +17,7 @@ XGBoost reached 97.71% test accuracy and 0.9634 macro F1, caught every Unhealthy
 | Project | Tools | Key finding |
 | --- | --- | --- |
 | What predicts a bad loan at a retail bank | Python, SQL (DuckDB), Tableau | Two pre-loan reviews bring the problematic loan rate from 11.1% to 5.0%. |
+| Which game moments users keep, and which games to support next | Python, Steam APIs, SQL Server | 97% of streamers get clips but only 36% ever download one. Independent case study, anonymized from a take-home test. |
 | Tracking IDR 14.5 billion of uncollected hospital revenue | Tableau | Self-pay patients are 13% of admissions but hold 30% of pending revenue. |
 | Finding which credit card customers can safely spend more | Python, scikit-learn | 38% of cardholders were dormant for six months, and only one dormant group is safe to reactivate. |
 | Which grocery categories drive revenue, and why | SQL (BigQuery) | Revenue follows units per customer, not customer count. The top four categories bring in 44%. |
@@ -26,8 +27,8 @@ XGBoost reached 97.71% test accuracy and 0.9634 macro F1, caught every Unhealthy
 
 ## Skills shown
 
-**SQL:** BigQuery, DuckDB, joins, CTEs, window functions
-**Python:** pandas, matplotlib, seaborn, scikit-learn, XGBoost, Streamlit
+**SQL:** BigQuery, DuckDB, SQL Server, joins, CTEs, window functions
+**Python:** REST APIs, pandas, matplotlib, seaborn, scikit-learn, XGBoost, Streamlit
 **Spreadsheet:** pivot tables, descriptive statistics, hypothesis testing, regression
 **Tableau:** dashboard design, LOD expressions, table calculations
 **Business analysis:** DARCI, SMART problem statements, issue trees, OBIPR
