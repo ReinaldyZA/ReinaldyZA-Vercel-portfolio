@@ -95,7 +95,7 @@
 
   // Project filter with counts and live status (informative feedback, easy reversal)
   var filters = document.querySelectorAll(".filters button");
-  var items = document.querySelectorAll(".work-item");
+  var items = document.querySelectorAll(".cards [data-tools]");
   var status = document.getElementById("filter-status");
   function matches(it, f) { return f === "all" || it.getAttribute("data-tools").split(" ").indexOf(f) !== -1; }
   filters.forEach(function (b) {

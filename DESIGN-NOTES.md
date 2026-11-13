@@ -5,10 +5,12 @@
 | User | Goal | Time spent | What the site gives them first |
 | --- | --- | --- | --- |
 | HR / recruiter | Decide in under a minute whether to shortlist | 30 to 60 seconds | Target role, a short intro, a snapshot of tools, education and experience, a one-click CV download |
-| Hiring manager / senior analyst | Judge the quality of the analysis | 5 to 15 minutes | Background, method and result on every card, plus full case studies with the original files |
+| Hiring manager / senior analyst | Judge the quality of the analysis | 5 to 15 minutes | One key result per card on the home page, with background, method, role, scope and the original files behind Read more on each case study |
 | Both | Get in touch | A few seconds | Email, WhatsApp and LinkedIn on the home page and a CTA on every case study |
 
 The page order follows those priorities: intro and CV, then projects, then the thesis, then About, then Contact.
+
+The home page is a summary. It shows results only (one headline number per project, four thesis metrics, a short About). Process and progress live on the case study pages, and the full experience and skills list opens with Read more.
 
 ## Shneiderman's 8 Golden Rules
 
@@ -21,4 +23,4 @@ The page order follows those priorities: intro and CV, then projects, then the t
 | 5. Prevent errors | Copy buttons for email and phone work even when no mail app is set up. Download links name the file type (PDF, PPTX, XLSX) before the click. |
 | 6. Permit easy reversal of actions | "Show all" clears a filter in one click. Breadcrumbs, Back to all projects, a Back to top button, and a lightbox that closes with Esc or a click outside. |
 | 7. Keep users in control | Nothing plays or moves on its own. Slides only enlarge when clicked. Readers choose the filter, the order and the depth. |
-| 8. Reduce short-term memory load | Sticky header with the current section marked. Breadcrumbs show "Case 3 of 8". Every card repeats role, scope and result so readers do not need to remember them, and every case study has CV and contact buttons in the sidebar. |
+| 8. Reduce short-term memory load | Sticky header with the current section marked. Breadcrumbs show "Case 3 of 8". Every card leads with its key result, and each case study repeats role and scope, and every case study has CV and contact buttons in the sidebar. |
