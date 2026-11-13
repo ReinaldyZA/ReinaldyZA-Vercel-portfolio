@@ -1,6 +1,6 @@
-# Reinaldy Zulfananda Arkaan | Portfolio
+# Reinaldy Zulfananda Arkaan | Data Analyst Portfolio
 
-**Live site:** [rein-vercel-portfolio.vercel.app](https://rein-vercel-portfolio.vercel.app)
+**Live site:** [reinaldyza-portfolio.vercel.app](https://reinaldyza-portfolio.vercel.app)
 
 A portfolio of data analysis projects from the RevoU Full Stack Data Analytics program and my undergraduate thesis at BINUS University. Each project opens with the finding, then walks through the business question, the method, the recommendations and the original deliverables.
 
@@ -49,4 +49,3 @@ Built as a static site with plain HTML, CSS and JavaScript, deployed on Vercel.
 [LinkedIn](https://www.linkedin.com/in/reinaldy-zulfananda-arkaan-30567a179/) · [GitHub](https://github.com/ReinaldyZA)
 
 *Company names in the RevoU projects are fictional and used for educational purposes.*
-# Reinaldyza-Vercel-portfolio
