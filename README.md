@@ -1,4 +1,4 @@
-# Reinaldy Zulfananda Arkaan | Data Analyst Portfolio
+# Reinaldy Zulfananda Arkaan | Portfolio
 
 **Live site:** [rein-vercel-portfolio.vercel.app](https://rein-vercel-portfolio.vercel.app)
 
