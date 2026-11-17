@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Reinaldy Zulfananda Arkaan | Data Analyst</title>
-<meta name="description" content="Data analyst portfolio: SQL, Python, spreadsheet and Tableau projects, plus a machine learning thesis on Jakarta&#x27;s air quality.">
-<meta property="og:title" content="Reinaldy Zulfananda Arkaan | Data Analyst">
-<meta property="og:description" content="Data analyst portfolio: SQL, Python, spreadsheet and Tableau projects, plus a machine learning thesis on Jakarta&#x27;s air quality.">
+<title>Reinaldy Zulfananda Arkaan | Data &amp; Business Analyst</title>
+<meta name="description" content="Data and business analyst portfolio: SQL, Python, spreadsheet and Tableau projects, system analysis work from a one-year internship, and a machine learning thesis on Jakarta&#x27;s air quality.">
+<meta property="og:title" content="Reinaldy Zulfananda Arkaan | Data &amp; Business Analyst">
+<meta property="og:description" content="Data and business analyst portfolio: SQL, Python, spreadsheet and Tableau projects, system analysis work from a one-year internship, and a machine learning thesis on Jakarta&#x27;s air quality.">
 <meta name="theme-color" content="#10283F">
 <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,650;12..96,700&family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -19,8 +19,9 @@
   <div class="wrap">
     <a class="wordmark" href="index.html">Reinaldy<span class="wm-long"> Zulfananda Arkaan</span>'s Portfolio</a>
     <nav class="site-nav" aria-label="Main">
-      <a href="index.html#work">Projects</a>
-      <a href="index.html#thesis">Thesis</a>
+      <a href="index.html#data">Data</a>
+      <a href="index.html#system">System</a>
+      <a class="hide-sm" href="index.html#thesis">Thesis</a>
       <a class="hide-sm" href="index.html#about">About</a>
       <a class="nav-cta" href="index.html#contact">Contact</a>
     </nav>
@@ -29,19 +30,19 @@
 <main id="main">
 <div class="wrap">
   <section class="hero">
-    <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Open to Data Analyst, BI and Business Analyst roles</p>
-    <h1>Hi, I'm Reinaldy. I turn business questions into clear, data-backed recommendations.</h1>
-    <p class="lede">Computer Science graduate from BINUS University with eight business cases and a machine learning thesis.</p>
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span> Open to Data Analyst, BI, Business Analyst and System Analyst roles</p>
+    <h1>Hi, I'm Reinaldy. I turn business needs and data into clear decisions.</h1>
+    <p class="lede">Computer Science graduate from BINUS University. I analyze data with SQL, Python and Tableau, and I write the requirements that turn findings into working systems.</p>
     <div class="hero-actions">
-      <a class="btn primary" href="#work">See the projects</a>
+      <a class="btn primary" href="#data">See Data Analyst projects</a>
+      <a class="btn" href="#system">See Business &amp; System Analyst work</a>
       <a class="btn" href="files/CV-Reinaldy-Zulfananda-Arkaan.pdf" download data-toast="CV download started (PDF, 350 KB)"><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Download CV <small class="btn-meta">PDF</small></a>
-      <a class="btn" href="#contact">Contact me</a>
     </div>
     <dl class="snapshot">
-      <div><dt>Tools</dt><dd>SQL, Python, Tableau, Excel and Google Sheets</dd></div>
+      <div><dt>Tools</dt><dd>SQL, Python, Tableau, Excel, Google Sheets, and BRD, SRS, UML and UAT</dd></div>
       <div><dt>Education</dt><dd>Computer Science, BINUS University, GPA 3.44</dd></div>
       <div><dt>Experience</dt><dd>1 year System Analyst internship</dd></div>
-      <div><dt>Portfolio</dt><dd>8 business cases and 1 ML thesis</dd></div>
+      <div><dt>Portfolio</dt><dd>8 data cases, 6 analysis documents and 1 ML thesis</dd></div>
     </dl>
   </section>
 </div>
@@ -51,12 +52,20 @@
     <div class="block-head">
       <div>
         <h2>Projects</h2>
-        <p>Eight business cases, newest first. Each card shows the key result. Open one for the full analysis and files.</p>
+        <p>Two kinds of work. Pick one to see its projects, then filter by tool or document. Each card shows the key result.</p>
       </div>
-      <div class="filters" role="group" aria-label="Filter projects by tool"><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="spreadsheet" aria-pressed="false">Spreadsheet</button><button type="button" data-filter="sql" aria-pressed="false">SQL</button><button type="button" data-filter="python" aria-pressed="false">Python</button><button type="button" data-filter="tableau" aria-pressed="false">Tableau</button></div>
     </div>
-    <p class="filter-status" id="filter-status" aria-live="polite">Showing all 8 projects</p>
-    <ul class="cards"><li class="pcard feature" data-tools="python sql tableau">
+    <div class="ptabs" role="tablist" aria-label="Project type">
+      <button type="button" role="tab" id="data" aria-selected="true" aria-controls="panel-data" tabindex="0"><span class="ptab-title">Data Analyst</span><span class="ptab-sub">8 projects · SQL, Python, Tableau, Spreadsheet</span></button>
+      <button type="button" role="tab" id="system" aria-selected="false" aria-controls="panel-system" tabindex="-1"><span class="ptab-title">Business &amp; System Analyst</span><span class="ptab-sub">6 documents · System analysis, Requirements, Planning, UI design</span></button>
+    </div>
+    <div class="ptab-panel" id="panel-data" role="tabpanel" aria-labelledby="data" data-filter-scope>
+      <div class="panel-head">
+        <p>Business cases from RevoU and independent work, newest first. Open one for the full analysis and files.</p>
+        <div class="filters" role="group" aria-label="Filter data projects by tool"><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="sql" aria-pressed="false">SQL</button><button type="button" data-filter="python" aria-pressed="false">Python</button><button type="button" data-filter="tableau" aria-pressed="false">Tableau</button><button type="button" data-filter="spreadsheet" aria-pressed="false">Spreadsheet</button></div>
+      </div>
+      <p class="filter-status" id="filter-status" aria-live="polite" data-noun="projects" data-prep="using">Showing all 8 projects</p>
+      <ul class="cards"><li class="pcard feature" data-tools="python sql tableau">
   <a class="pcard-link" href="projects/berka-credit-risk.html">
     <span class="pcard-thumb"><img src="assets/img/slides/berka-2.jpg" alt="" loading="lazy" width="1280" height="720"></span>
     <span class="pcard-body">
@@ -137,6 +146,75 @@
     </span>
   </a>
 </li></ul>
+    </div>
+    <div class="ptab-panel" id="panel-system" role="tabpanel" aria-labelledby="system" data-filter-scope hidden>
+      <div class="panel-head">
+        <p>Requirement, planning and design documents, one card each. Open one to read the document itself.</p>
+        <div class="filters" role="group" aria-label="Filter system analysis work by type"><button type="button" data-filter="all" aria-pressed="true">All</button><button type="button" data-filter="system" aria-pressed="false">System analysis</button><button type="button" data-filter="requirements" aria-pressed="false">Requirements</button><button type="button" data-filter="planning" aria-pressed="false">Planning</button><button type="button" data-filter="ui" aria-pressed="false">UI design</button></div>
+      </div>
+      <p class="filter-status" aria-live="polite" data-noun="documents" data-prep="in">Showing all 6 documents</p>
+      <ul class="cards"><li class="pcard feature" data-tools="system">
+  <a class="pcard-link" href="projects/ogan-lopian-system-analysis.html">
+    <span class="pcard-thumb"><img src="assets/img/ogan-lopian/thumb.jpg" alt="" loading="lazy" width="1280" height="720"></span>
+    <span class="pcard-body">
+      <span class="pcard-top"><ul class="tags"><li class="tag">System analysis</li><li class="tag">UAT</li></ul><span class="pcard-date">Internship, Feb 2025 to Feb 2026</span></span>
+      <h3>Ogan Lopian: requirements and testing for a public service app</h3>
+      <span class="pcard-metric"><strong>20 UML diagrams</strong>plus BRD, SRS, PRD and UAT for two systems</span>
+      <span class="pcard-more">Read more <span aria-hidden="true">→</span></span>
+    </span>
+  </a>
+</li><li class="pcard" data-tools="requirements">
+  <a class="pcard-link" href="projects/cookaid-prd.html">
+    <span class="pcard-thumb"><img src="assets/img/cookaid/thumb-prd.jpg" alt="" loading="lazy" width="1280" height="720"></span>
+    <span class="pcard-body">
+      <span class="pcard-top"><ul class="tags"><li class="tag">PRD</li></ul><span class="pcard-date">MySkill, Oct 2024</span></span>
+      <h3>Cookaid PRD: 14 user stories with acceptance criteria</h3>
+      <span class="pcard-metric"><strong>14 user stories</strong>each with a journey, acceptance criteria and a Figma screen</span>
+      <span class="pcard-more">Read more <span aria-hidden="true">→</span></span>
+    </span>
+  </a>
+</li><li class="pcard" data-tools="planning">
+  <a class="pcard-link" href="projects/cookaid-project-charter.html">
+    <span class="pcard-thumb"><img src="assets/img/cookaid/thumb-charter.jpg" alt="" loading="lazy" width="1280" height="720"></span>
+    <span class="pcard-body">
+      <span class="pcard-top"><ul class="tags"><li class="tag">Charter</li></ul><span class="pcard-date">MySkill, Oct 2024</span></span>
+      <h3>Cookaid project charter: scope, team and success criteria</h3>
+      <span class="pcard-metric"><strong>9 features</strong>in scope, with measurable targets and three named risks</span>
+      <span class="pcard-more">Read more <span aria-hidden="true">→</span></span>
+    </span>
+  </a>
+</li><li class="pcard" data-tools="planning">
+  <a class="pcard-link" href="projects/cookaid-wbs-gantt.html">
+    <span class="pcard-thumb"><img src="assets/img/cookaid/thumb-wbs.jpg" alt="" loading="lazy" width="1280" height="720"></span>
+    <span class="pcard-body">
+      <span class="pcard-top"><ul class="tags"><li class="tag">WBS</li><li class="tag">Gantt</li></ul><span class="pcard-date">MySkill, Oct 2024</span></span>
+      <h3>Cookaid WBS and Gantt chart: six phases in a 20-week plan</h3>
+      <span class="pcard-metric"><strong>20 weeks</strong>six phases and nine milestones, Oct 2024 to Mar 2025</span>
+      <span class="pcard-more">Read more <span aria-hidden="true">→</span></span>
+    </span>
+  </a>
+</li><li class="pcard" data-tools="planning">
+  <a class="pcard-link" href="projects/cookaid-sprint-backlog.html">
+    <span class="pcard-thumb"><img src="assets/img/cookaid/thumb-backlog.jpg" alt="" loading="lazy" width="1280" height="720"></span>
+    <span class="pcard-body">
+      <span class="pcard-top"><ul class="tags"><li class="tag">Agile</li><li class="tag">Excel</li></ul><span class="pcard-date">MySkill, Oct 2024</span></span>
+      <h3>Cookaid sprint backlog: 96 story points across 9 sprints</h3>
+      <span class="pcard-metric"><strong>96 story points</strong>across nine two-week sprints that never overlap</span>
+      <span class="pcard-more">Read more <span aria-hidden="true">→</span></span>
+    </span>
+  </a>
+</li><li class="pcard" data-tools="ui">
+  <a class="pcard-link" href="projects/cookaid-ui-design.html">
+    <span class="pcard-thumb"><img src="assets/img/cookaid/thumb.jpg" alt="" loading="lazy" width="1280" height="720"></span>
+    <span class="pcard-body">
+      <span class="pcard-top"><ul class="tags"><li class="tag">Figma</li></ul><span class="pcard-date">MySkill, Oct 2024</span></span>
+      <h3>Cookaid UI design: screens built from the user stories</h3>
+      <span class="pcard-metric"><strong>3 flows</strong>onboarding, sign in and profile, each tied to a PRD story</span>
+      <span class="pcard-more">Read more <span aria-hidden="true">→</span></span>
+    </span>
+  </a>
+</li></ul>
+    </div>
   </div>
 </section>
 
@@ -171,13 +249,13 @@
 <section class="block" id="about">
   <div class="wrap">
     <h2 style="margin-bottom:18px">About me</h2>
-    <p class="lede" style="max-width:62ch">I turn data into business insights with SQL, Python, Tableau and spreadsheets, starting from who needs the answer and what they will do with it.</p>
+    <p class="lede" style="max-width:62ch">I start from who needs the answer and what they will do with it. Sometimes that answer is an analysis in SQL, Python or Tableau, sometimes it is a requirement document a developer can build from.</p>
     <dl class="highlights">
       <div><dt>Education</dt><dd><strong>BINUS University</strong>Computer Science, GPA 3.44</dd></div>
       <div><dt>Experience</dt><dd><strong>System Analyst intern</strong>PT. Pratama Solusi Teknologi, 1 year</dd></div>
-      <div><dt>Training</dt><dd><strong>RevoU</strong>Full Stack Data Analytics</dd></div>
+      <div><dt>Training</dt><dd><strong>RevoU and MySkill</strong>Full Stack Data Analytics, Product &amp; Project Management</dd></div>
     </dl>
-    <ul class="chips core"><li>SQL</li><li>Python</li><li>Tableau</li><li>Excel</li><li>Google Sheets</li><li>Statistics</li><li>Machine Learning</li><li>Streamlit</li></ul>
+    <ul class="chips core"><li>SQL</li><li>Python</li><li>Tableau</li><li>Excel</li><li>Google Sheets</li><li>Statistics</li><li>Machine Learning</li><li>BRD and SRS</li><li>UML</li><li>UAT</li></ul>
     <details class="more">
       <summary>Read more: full experience and skills</summary>
       <div class="about3">
@@ -189,6 +267,7 @@
         <h3 class="col-title" style="margin-top:22px">Certification</h3>
         <ol class="timeline">
           <li><span class="when">Jul 2026 to Oct 2026</span><strong>Full Stack Data Analytics, RevoU</strong>SQL, Python, statistics, Tableau and a capstone project.</li>
+          <li><span class="when">Oct 2024</span><strong>Product &amp; Project Management, and Figma for UI/UX, MySkill</strong>PRD, user stories, WBS, sprint planning and high-fidelity UI design. Case study: Cookaid.</li>
         </ol>
       </div>
       <div>
@@ -223,8 +302,8 @@
 <section class="block" id="contact">
   <div class="wrap contact">
     <div>
-      <h2>Hiring for a data role? Let's talk.</h2>
-      <ul class="contact-list"><li><span>Email</span><span class="copyrow"><a href="mailto:reinaldizulfanandaarkaan@gmail.com">reinaldizulfanandaarkaan@gmail.com</a><button type="button" class="copy" data-copy="reinaldizulfanandaarkaan@gmail.com">Copy</button></span></li><li><span>WhatsApp</span><span class="copyrow"><a href="https://wa.me/6282297471234" target="_blank" rel="noopener">+62 822 9747 1234</a><button type="button" class="copy" data-copy="+6282297471234">Copy</button></span></li><li><span>Location</span>DKI Jakarta, South Jakarta</li></ul>
+      <h2>Hiring for a data or analyst role? Let's talk.</h2>
+      <ul class="contact-list"><li><span>Email</span><span class="copyrow"><a href="mailto:reinaldizulfanandaarkaan@gmail.com">reinaldizulfanandaarkaan@gmail.com</a><button type="button" class="copy" data-copy="reinaldizulfanandaarkaan@gmail.com">Copy</button></span></li><li><span>WhatsApp</span><span class="copyrow"><a href="https://wa.me/6282297471234" target="_blank" rel="noopener">+62 822 9747 1234</a><button type="button" class="copy" data-copy="+6282297471234">Copy</button></span></li><li><span>Location</span>Purwakarta, West Java</li></ul>
     </div>
     <div class="hero-actions" style="margin-top:0">
       <a class="btn primary" href="mailto:reinaldizulfanandaarkaan@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Email me</a>
@@ -237,7 +316,7 @@
 </section>
 </main>
 <footer class="site-foot">
-  <div class="wrap">© 2026 Reinaldy Zulfananda Arkaan. Projects from the RevoU Full Stack Data Analytics program, an independent case study and my undergraduate thesis at BINUS University. Company names in the RevoU projects (RevoShion, TokoBli, RevoGrocers, RevoBank, Revo Hospital) are fictional and used for learning purposes.</div>
+  <div class="wrap">© 2026 Reinaldy Zulfananda Arkaan. Projects from the RevoU Full Stack Data Analytics program, a System Analyst internship, a MySkill case study, an independent case study and my undergraduate thesis at BINUS University. Company names in the RevoU projects (RevoShion, TokoBli, RevoGrocers, RevoBank, Revo Hospital) are fictional and used for learning purposes.</div>
 </footer>
 <script src="assets/js/ispu-data.js"></script><script src="assets/js/main.js"></script>
 </body>

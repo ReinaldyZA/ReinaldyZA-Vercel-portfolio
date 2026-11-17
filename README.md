@@ -1,8 +1,8 @@
-# Reinaldy Zulfananda Arkaan | Data Analyst Portfolio
+# Reinaldy Zulfananda Arkaan | Data & Business Analyst Portfolio
 
 **Live site:** [reinaldyza-portfolio.vercel.app](https://reinaldyza-portfolio.vercel.app)
 
-A portfolio of data analysis projects from the RevoU Full Stack Data Analytics program, an independent case study and my undergraduate thesis at BINUS University. Each project opens with the finding, then walks through the business question, the method, the recommendations and the original deliverables.
+A portfolio of data analysis projects from the RevoU Full Stack Data Analytics program, system analysis work from a one-year internship, a MySkill product requirements case study, an independent case study and my undergraduate thesis at BINUS University. Each project opens with the finding, then walks through the business question, the method, the recommendations and the original deliverables.
 
 ## Thesis
 
@@ -25,6 +25,17 @@ XGBoost reached 97.71% test accuracy and 0.9634 macro F1, caught every Unhealthy
 | Evaluating twin-date campaigns and a product page A/B test | Spreadsheet, t-test | The new product page lifted average order value by 11% (p < 0.001). |
 | Why Corporate profit fell while sales grew | DARCI, issue tree, OBIPR | Furniture is the only category losing ground, down 56.6%. |
 
+## Business and system analysis
+
+| Case | Tools | Key result |
+| --- | --- | --- |
+| Ogan Lopian: requirements and testing for a public service app | BRD, SRS, PRD, UML, ERD, UAT | System Analyst internship at PT. Pratama Solusi Teknologi with Diskominfo Purwakarta. 20 UML diagrams and UAT for two systems. Client documents are not published. |
+| Cookaid PRD: 14 user stories with acceptance criteria | PRD, user stories, RACI | 14 stories, each with a journey, acceptance criteria and a Figma screen. |
+| Cookaid project charter | Charter | 9 features in scope, measurable success criteria and three named risks. |
+| Cookaid WBS and Gantt chart | WBS, Gantt | Six phases and nine milestones in a 20-week plan. |
+| Cookaid sprint backlog | Excel, Agile | 96 story points across nine two-week sprints. |
+| Cookaid UI design | Figma | Onboarding, sign in and profile flows built from the PRD stories. |
+
 ## Skills shown
 
 **SQL:** BigQuery, DuckDB, SQL Server, joins, CTEs, window functions
@@ -32,6 +43,7 @@ XGBoost reached 97.71% test accuracy and 0.9634 macro F1, caught every Unhealthy
 **Spreadsheet:** pivot tables, descriptive statistics, hypothesis testing, regression
 **Tableau:** dashboard design, LOD expressions, table calculations
 **Business analysis:** DARCI, SMART problem statements, issue trees, OBIPR
+**System analysis:** BRD, SRS, PRD, user stories, UML, ERD, UAT, WBS, sprint planning
 
 ## Repository structure
 

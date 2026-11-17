@@ -93,25 +93,77 @@
     }).catch(function () {});
   }
 
-  // Project filter with counts and live status (informative feedback, easy reversal)
-  var filters = document.querySelectorAll(".filters button");
-  var items = document.querySelectorAll(".cards [data-tools]");
-  var status = document.getElementById("filter-status");
-  function matches(it, f) { return f === "all" || it.getAttribute("data-tools").split(" ").indexOf(f) !== -1; }
-  filters.forEach(function (b) {
-    var f = b.getAttribute("data-filter");
-    var n = 0; items.forEach(function (it) { if (matches(it, f)) n++; });
-    b.insertAdjacentHTML("beforeend", ' <span class="count">' + n + "</span>");
-    b.addEventListener("click", function () {
-      var shown = 0;
-      filters.forEach(function (o) { o.setAttribute("aria-pressed", o === b ? "true" : "false"); });
-      items.forEach(function (it) { var ok = matches(it, f); it.hidden = !ok; if (ok) shown++; });
-      if (status) {
-        status.innerHTML = f === "all" ? "Showing all " + shown + " projects"
-          : "Showing " + shown + " of " + items.length + " projects using " + b.firstChild.textContent.trim() + ' <button type="button" class="linklike" id="clear-filter">Show all</button>';
-        var c = document.getElementById("clear-filter");
-        if (c) c.addEventListener("click", function () { filters[0].click(); filters[0].focus(); });
-      }
+  // Project type tabs (Data Analyst / System Analyst): linkable as #data and #system, remembered for this visit
+  var tabs = document.querySelectorAll('.ptabs [role="tab"]');
+  if (tabs.length) {
+    var store = { get: function () { try { return sessionStorage.getItem("ptab"); } catch (e) { return null; } },
+                  set: function (v) { try { sessionStorage.setItem("ptab", v); } catch (e) {} } };
+    var ids = Array.prototype.map.call(tabs, function (t) { return t.id; });
+    function activate(id, focus) {
+      if (ids.indexOf(id) === -1) return;
+      tabs.forEach(function (t) {
+        var on = t.id === id;
+        t.setAttribute("aria-selected", on ? "true" : "false");
+        t.tabIndex = on ? 0 : -1;
+        document.getElementById(t.getAttribute("aria-controls")).hidden = !on;
+        if (on && focus) t.focus();
+      });
+      store.set(id);
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener("click", function () {
+        activate(t.id);
+        if (history.replaceState) history.replaceState(null, "", "#" + t.id);
+      });
+      t.addEventListener("keydown", function (e) {
+        var k = e.key, n = null;
+        if (k === "ArrowRight") n = (i + 1) % tabs.length;
+        else if (k === "ArrowLeft") n = (i - 1 + tabs.length) % tabs.length;
+        else if (k === "Home") n = 0;
+        else if (k === "End") n = tabs.length - 1;
+        if (n === null) return;
+        e.preventDefault(); tabs[n].click(); tabs[n].focus();
+      });
+    });
+    // Links on this page that point at a tab (header, hero) switch it before the browser scrolls
+    document.querySelectorAll('a[href$="#data"], a[href$="#system"]').forEach(function (a) {
+      a.addEventListener("click", function () { activate(a.getAttribute("href").split("#")[1]); });
+    });
+    window.addEventListener("hashchange", function () { activate(location.hash.slice(1)); });
+    var fromHash = location.hash.slice(1);
+    if (ids.indexOf(fromHash) !== -1) {
+      activate(fromHash);
+      var target = document.getElementById(fromHash);
+      if (target) setTimeout(function () { target.scrollIntoView(); }, 0);
+    } else {
+      activate(store.get() || ids[0]);
+    }
+  }
+
+  // Project filters with counts and live status, one per section (informative feedback, easy reversal)
+  document.querySelectorAll(".filters").forEach(function (group) {
+    var scope = group.closest("[data-filter-scope]") || group.closest("section") || document;
+    var filters = group.querySelectorAll("button");
+    var items = scope.querySelectorAll(".cards [data-tools]");
+    var status = scope.querySelector(".filter-status");
+    var noun = (status && status.getAttribute("data-noun")) || "projects";
+    var prep = (status && status.getAttribute("data-prep")) || "using";
+    function matches(it, f) { return f === "all" || it.getAttribute("data-tools").split(" ").indexOf(f) !== -1; }
+    filters.forEach(function (b) {
+      var f = b.getAttribute("data-filter");
+      var n = 0; items.forEach(function (it) { if (matches(it, f)) n++; });
+      b.insertAdjacentHTML("beforeend", ' <span class="count">' + n + "</span>");
+      b.addEventListener("click", function () {
+        var shown = 0;
+        filters.forEach(function (o) { o.setAttribute("aria-pressed", o === b ? "true" : "false"); });
+        items.forEach(function (it) { var ok = matches(it, f); it.hidden = !ok; if (ok) shown++; });
+        if (status) {
+          status.innerHTML = f === "all" ? "Showing all " + shown + " " + noun
+            : "Showing " + shown + " of " + items.length + " " + noun + " " + prep + " " + b.firstChild.textContent.trim() + ' <button type="button" class="linklike clear-filter">Show all</button>';
+          var c = status.querySelector(".clear-filter");
+          if (c) c.addEventListener("click", function () { filters[0].click(); filters[0].focus(); });
+        }
+      });
     });
   });
 
@@ -170,7 +222,7 @@
   var dlg = document.querySelector("dialog.lightbox");
   if (dlg) {
     var img = dlg.querySelector("img");
-    document.querySelectorAll(".gallery button").forEach(function (b) {
+    document.querySelectorAll(".gallery button, .docview-pages button").forEach(function (b) {
       b.addEventListener("click", function () {
         var src = b.querySelector("img");
         img.src = src.src;

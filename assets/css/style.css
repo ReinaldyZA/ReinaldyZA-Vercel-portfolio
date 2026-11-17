@@ -392,3 +392,42 @@ details.more .about3 { margin-top: 28px; }
   .pcard.feature .pcard-metric { margin-top: 8px; }
 }
 @media (max-width: 600px) { .pcard:not(.feature) .pcard-thumb img { aspect-ratio: 21 / 9; object-position: top; } }
+
+/* Business and system analysis section */
+.cards.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 640px) { .cards.two { grid-template-columns: 1fr; } }
+.gallery img.fit { object-fit: contain; background: var(--paper); }
+.gallery img.top { object-position: top; }
+.links a.ext.ext:not(.btn):not(.work-link)::after { content: none; }
+
+/* Document viewer on analysis case pages */
+.docview { margin: 0; border: 1px solid var(--line); border-radius: var(--radius-m); overflow: hidden; background: #E4E9ED; }
+.docview-bar { display: flex; justify-content: space-between; gap: 12px; padding: 10px 16px; background: var(--surface); border-bottom: 1px solid var(--line); font-size: .9rem; font-weight: 600; }
+.docview-bar span:last-child { color: var(--ink-soft); font-weight: 500; }
+.docview-bar i { font-style: normal; color: var(--blue); margin-right: 6px; }
+.docview-pages { max-height: 860px; overflow: auto; padding: 28px 20px; display: flex; flex-direction: column; align-items: center; gap: 22px; }
+.docview-pages:focus-visible { outline: 3px solid var(--blue); outline-offset: -3px; }
+.docview-pages button { padding: 0; border: 0; background: #fff; box-shadow: 0 6px 18px rgba(16,40,63,.16); cursor: zoom-in; width: 100%; flex: none; }
+.docview-pages button.portrait { width: min(640px, 100%); }
+.docview-pages img { display: block; width: 100%; height: auto; }
+@media (max-width: 560px) { .docview-pages { padding: 16px 10px; max-height: 620px; } }
+dialog.lightbox { max-height: 94vh; overflow: auto; }
+
+/* Analysis cards: document thumbnails are previews, keep the top of the page */
+#panel-system .pcard-thumb img { object-position: top; }
+
+/* Project type tabs: Data Analyst and System Analyst */
+.ptabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin: 0 0 30px; }
+.ptabs [role="tab"] { scroll-margin-top: 96px; display: flex; flex-direction: column; align-items: flex-start; gap: 6px; text-align: left; padding: 20px 22px; border: 1.5px solid var(--line); border-radius: var(--radius-m); background: var(--surface); color: var(--ink); font: inherit; cursor: pointer; transition: border-color .15s, background .15s; }
+.ptabs [role="tab"]:hover { border-color: var(--blue); }
+.ptabs [role="tab"]:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+.ptabs [role="tab"][aria-selected="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+.ptab-title { font-family: var(--display); font-weight: 700; font-size: 1.45rem; letter-spacing: -0.01em; line-height: 1.15; }
+.ptab-sub { font-size: .9rem; color: var(--ink-soft); }
+.ptabs [aria-selected="true"] .ptab-sub { color: rgba(255,255,255,.78); }
+.panel-head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 14px 32px; margin-bottom: 14px; }
+.panel-head p { margin: 0; color: var(--ink-soft); max-width: 52ch; }
+.ptab-panel[hidden] { display: none; }
+@media (max-width: 560px) { .ptabs { gap: 10px; } .ptabs [role="tab"] { padding: 14px 14px; } .ptab-title { font-size: 1.15rem; } .ptab-sub { font-size: .8rem; } }
+@media (prefers-reduced-motion: reduce) { .ptabs [role="tab"] { transition: none; } }
+.ptab-panel .filter-status { margin: 12px 0 20px; }
