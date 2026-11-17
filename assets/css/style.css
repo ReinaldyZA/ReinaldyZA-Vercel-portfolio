@@ -431,3 +431,11 @@ dialog.lightbox { max-height: 94vh; overflow: auto; }
 @media (max-width: 560px) { .ptabs { gap: 10px; } .ptabs [role="tab"] { padding: 14px 14px; } .ptab-title { font-size: 1.15rem; } .ptab-sub { font-size: .8rem; } }
 @media (prefers-reduced-motion: reduce) { .ptabs [role="tab"] { transition: none; } }
 .ptab-panel .filter-status { margin: 12px 0 20px; }
+/* Internship and MySkill groups inside the Business & System Analyst tab */
+.card-group + .card-group { margin-top: 44px; padding-top: 32px; border-top: 1px solid var(--line); }
+.card-group[hidden] { display: none; }
+.group-head { margin-bottom: 18px; display: flex; flex-direction: column; gap: 8px; }
+.group-head h3 { font-size: 1.3rem; margin: 0; }
+.group-head p { margin: 0; color: var(--ink-soft); max-width: 70ch; font-size: .95rem; }
+.group-tag { align-self: flex-start; font-size: .78rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--blue); background: #E6EEF8; padding: 4px 10px; border-radius: 999px; }
+.group-tag.alt { color: #8A4B00; background: #FFF1DC; }

@@ -27,9 +27,18 @@ XGBoost reached 97.71% test accuracy and 0.9634 macro F1, caught every Unhealthy
 
 ## Business and system analysis
 
+LayanKita comes from my System Analyst internship. The app, company, client, places and people are anonymized. Cookaid comes from the MySkill Product & Project Management and Figma for UI/UX courses.
+
 | Case | Tools | Key result |
 | --- | --- | --- |
-| Ogan Lopian: requirements and testing for a public service app | BRD, SRS, PRD, UML, ERD, UAT | System Analyst internship at PT. Pratama Solusi Teknologi with Diskominfo Purwakarta. 20 UML diagrams and UAT for two systems. Client documents are not published. |
+| LayanKita BRD | BRD | 24 business requirements from 7 problems, a benchmark and an as-is and to-be process. |
+| LayanKita PRD | PRD, user stories | 34 user stories for the mobile app and web dashboard. |
+| LayanKita SRS, web dashboard | SRS, MoSCoW | 48 functional and 17 non-functional requirements. |
+| LayanKita SRS, mobile app | SRS, MoSCoW | 86 functional requirements, including QRIS payment and QR tickets. |
+| LayanKita diagrams | draw.io, UML, ERD | 22 diagrams: 10 UML (use case, activity, sequence, state machine), 10 ERD and 2 flowcharts. |
+| LayanKita UAT | Excel | 55 scenarios in two rounds with the client, 55 of 55 passed. |
+| LayanKita user manual | Word | A 28-page guide for dashboard admins. |
+| LayanKita screens | Screenshots, mockups | 67 anonymized screens of the mobile app and web dashboard. |
 | Cookaid PRD: 14 user stories with acceptance criteria | PRD, user stories, RACI | 14 stories, each with a journey, acceptance criteria and a Figma screen. |
 | Cookaid project charter | Charter | 9 features in scope, measurable success criteria and three named risks. |
 | Cookaid WBS and Gantt chart | WBS, Gantt | Six phases and nine milestones in a 20-week plan. |

@@ -157,6 +157,7 @@
         var shown = 0;
         filters.forEach(function (o) { o.setAttribute("aria-pressed", o === b ? "true" : "false"); });
         items.forEach(function (it) { var ok = matches(it, f); it.hidden = !ok; if (ok) shown++; });
+        scope.querySelectorAll(".card-group").forEach(function (g) { g.hidden = !g.querySelector(".cards [data-tools]:not([hidden])"); });
         if (status) {
           status.innerHTML = f === "all" ? "Showing all " + shown + " " + noun
             : "Showing " + shown + " of " + items.length + " " + noun + " " + prep + " " + b.firstChild.textContent.trim() + ' <button type="button" class="linklike clear-filter">Show all</button>';
