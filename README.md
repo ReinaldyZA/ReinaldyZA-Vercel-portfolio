@@ -37,7 +37,7 @@ LayanKita comes from my System Analyst internship. The app, company, client, pla
 | LayanKita SRS, mobile app | SRS, MoSCoW | 86 functional requirements, including QRIS payment and QR tickets. |
 | LayanKita diagrams | draw.io, UML, ERD | 22 diagrams: 10 UML (use case, activity, sequence, state machine), 10 ERD and 2 flowcharts. |
 | LayanKita UAT | Excel | 55 scenarios in two rounds with the client, 55 of 55 passed. |
-| LayanKita user manual | Word | A 28-page guide for dashboard admins. |
+| LayanKita user manuals | Word | A 28-page web dashboard manual I wrote, plus the developer team's 131-page mobile manual, anonymized. |
 | LayanKita screens | Screenshots, mockups | 67 anonymized screens of the mobile app and web dashboard. |
 | Cookaid PRD: 14 user stories with acceptance criteria | PRD, user stories, RACI | 14 stories, each with a journey, acceptance criteria and a Figma screen. |
 | Cookaid project charter | Charter | 9 features in scope, measurable success criteria and three named risks. |
